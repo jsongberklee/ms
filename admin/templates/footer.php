@@ -28,6 +28,7 @@
     <script src="templates/js/plugins/jquery.mmenu.js"></script>
     <script src="templates/js/msops.js"></script>
     <script src="templates/js/msp.js"></script>
+		<script src="templates/js/custom-mdev.js"></script>
 
     <?php
     include(PATH . 'templates/js-loader/left-slide-panel.php');
