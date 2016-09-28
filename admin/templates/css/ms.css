@@ -603,3 +603,19 @@ span.label {
   z-index: 2;
   opacity: 0;
 }
+
+/* LR customization */
+.navbar{
+	background-image:none;
+	background-color:#d81118;
+}
+.btn-info{
+	background-color:#25353c;
+	border-color:#25353c;
+	/*background-color:#4c5960;*/
+	/*border-color:#4c5960;*/
+}
+.btn-info:hover{
+	background-color:#4c5960;
+	border-color:#4c5960;
+}
