@@ -112,7 +112,7 @@ $msg_showticket23 = 'Open';
 $msg_showticket24 = 'Closed';
 $msg_showticket27 = 'This dispute currently has 0 replies.';
 
-$msg_adheader = 'Helpdesk CP';
+$msg_adheader = 'LR Staff Request Admin';
 $msg_adheader2 = 'Settings';
 $msg_adheader3 = 'Departments';
 $msg_adheader4 = 'Support Team';

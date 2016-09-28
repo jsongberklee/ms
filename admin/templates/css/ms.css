@@ -619,3 +619,24 @@ span.label {
 	background-color:#4c5960;
 	border-color:#4c5960;
 }
+a{
+    color: #d81118;
+}
+a:hover, a:focus{
+    color: #6c080c;
+}
+.btn-info,.btn-info:active,.btn-info:focus, .btn-info:active:focus{
+	border-color: #c6c6c6;
+	background-color: #c6c6c6;
+}
+.label-primary{
+    background-color: #b84c36;
+}
+.label-info{
+    background-color: #d77663;
+}
+footer{
+	background-image: none;
+    background-color: #d81118;
+	color:#fff;
+}
