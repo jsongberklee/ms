@@ -178,10 +178,12 @@ function mswDeptLoader() {
         mswProcessOK();
         if (data['fields']) {
           jQuery('#three').html((data['fields'] ? data['fields'] : curt3));
-          jQuery('.nav-tabs li:nth-child(2)').show();
+          //jQuery('.nav-tabs li:nth-child(2)').show();
         } else {
           jQuery('#three').html(curt3);
           jQuery('.nav-tabs li:nth-child(2)').hide();
+					// added by jsong, to hide the custom field
+					jQuery('#three .form-group').hide();
         }
         if (data['subject']) {
           jQuery('input[name="subject"]').val(data['subject']);

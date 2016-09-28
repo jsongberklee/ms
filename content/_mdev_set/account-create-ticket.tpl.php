@@ -1,4 +1,8 @@
 <?php if (!defined('PATH')) { exit; }
+
+/* highlight_string("<?php\n\$this =\n" . var_export($this, true) . ";\n?>"); */
+//echo '<pre>'.var_export($this, true).'</pre>';
+
 if ($this->RECAPTCHA) {
   define('LOAD_RECAPTCHA', 1);
 }
@@ -22,10 +26,10 @@ if ($this->RECAPTCHA) {
         <ul class="nav nav-tabs">
           <li class="active"><a href="#one" data-toggle="tab"><i class="fa fa-ticket fa-fw"></i> <span class="hidden-sm hidden-xs"><?php echo $this->TXT[24]; ?></span></a></li>
           <?php
-          // Is there at least 1 custom field?
+          // Is there at least 1 custom field? // removed by jsong
           if ($this->CUS_FIELDS_COUNT > 0) {
           ?>
-          <li><a href="#three" data-toggle="tab"><i class="fa fa-list fa-fw"></i> <span class="hidden-sm hidden-xs"><?php echo $this->TXT[23]; ?></span></a></li>
+          <!-- <li><a href="#three" data-toggle="tab"><i class="fa fa-list fa-fw"></i> <span class="hidden-sm hidden-xs"><?php echo $this->TXT[23]; ?></span></a></li> -->
           <?php
           }
           // ENTRY ATTACHMENTS
@@ -48,12 +52,12 @@ if ($this->RECAPTCHA) {
                 // If the person is logged in, we already have name and email, so we can hide these fields..
                 if ($this->LOGGED_IN == 'no') {
                 ?>
-                <div class="form-group">
+                <div class="form-group ticket-username-mdev">
                   <label><?php echo $this->TXT[2]; ?></label>
                   <input type="text" class="form-control" name="name" tabindex="1" maxlength="250" value="" autofocus>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group ticket-useremail-mdev">
                   <label><?php echo $this->TXT[3]; ?></label>
                   <input type="text" class="form-control" name="email" tabindex="2" maxlength="250" value="">
                 </div>
@@ -61,7 +65,7 @@ if ($this->RECAPTCHA) {
                 }
                 ?>
 
-                <div class="form-group">
+                <div class="form-group ticket-department-mdev">
                   <label><?php echo $this->TXT[5]; ?></label>
                   <select name="dept" tabindex="4" onchange="mswDeptLoader()" class="form-control">
                   <option value="0">- - - -</option>
@@ -72,6 +76,15 @@ if ($this->RECAPTCHA) {
                   ?>
                   </select>
                 </div>
+
+	              <?php
+	              // Is there at least 1 custom field?
+	              if ($this->CUS_FIELDS_COUNT > 0) {
+	              ?>
+	              <div class="form-group" id="three">
+	                <div><i class="fa fa-warning fa-fw"></i> <?php echo $this->TXT[26]; ?></div>
+	              </div>
+
 
                 <div class="form-group">
                   <label><?php echo $this->TXT[4]; ?></label>
@@ -111,13 +124,7 @@ if ($this->RECAPTCHA) {
 
               </div>
 
-              <?php
-              // Is there at least 1 custom field?
-              if ($this->CUS_FIELDS_COUNT > 0) {
-              ?>
-              <div class="tab-pane fade" id="three">
-                <div><i class="fa fa-warning fa-fw"></i> <?php echo $this->TXT[26]; ?></div>
-              </div>
+
               <?php
               }
 
