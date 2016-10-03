@@ -6,6 +6,11 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <?php echo $this->TXT[1]; ?>
+			<?php 
+			/* Begin: mdev modification */
+				echo '<a class="btn btn-primary btn-lg btn-front-new-ticket" href="http://local.mdev-sandbox.berklee.net/?p=open" role="button" rel="nofollow"><i class="fa fa-pencil fa-fw"></i> <span class="">Open New Ticket</span></a>'; 
+			/* End: mdev modification */
+			?>  
           </div>
         </div>
       </div>

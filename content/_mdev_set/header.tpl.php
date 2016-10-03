@@ -20,6 +20,7 @@
 	  echo $this->FILES;
 	  ?>
     <link href="<?php echo $this->SYS_BASE_HREF; ?>css/ms.css" rel="stylesheet">
+	<link href="<?php echo $this->SYS_BASE_HREF; ?>css/mdev-1.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo $this->SETTINGS->scriptpath; ?>/favicon.ico">
 
 	</head>
