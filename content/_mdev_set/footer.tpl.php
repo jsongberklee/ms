@@ -153,6 +153,9 @@
 
     // Action spinner, DO NOT REMOVE
     ?>
+	
+	<script src="<?php echo $this->SYS_BASE_HREF; ?>js/mdev.js"></script>
+	
     <div class="overlaySpinner" style="display:none"></div>
 
 </body>

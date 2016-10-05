@@ -6,11 +6,60 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <?php echo $this->TXT[1]; ?>
+			<div class="No-display">
 			<?php 
 			/* Begin: mdev modification */
 				echo '<a class="btn btn-primary btn-lg btn-front-new-ticket" href="http://local.mdev-sandbox.berklee.net/?p=open" role="button" rel="nofollow"><i class="fa fa-pencil fa-fw"></i> <span class="">Open New Ticket</span></a>'; 
 			/* End: mdev modification */
-			?>  
+			?> 
+			</div>
+			<!-- Begin: mdev modification--> 
+			<div class="panel panel-default create-ticket">
+				 <div class="panel-heading">CREATE TICKETS FOR</div>
+				<div class="mdev-ticket-shortcut">
+					<!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">General Tickets</button>
+					</div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-success">Purchase Request</button>
+					</div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-danger">Order Office Supplis</button>
+					</div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-danger">Order Physical Work</button>
+					</div>
+					<div class="btn-group tech">
+					  <button type="button" class="btn btn-info">Technical Support</button>
+					  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					     <span class="caret"></span>
+					     <span class="sr-only">Toggle Dropdown</span>
+					   </button>
+					   <ul class="dropdown-menu">
+					     <li><a href="/?p=open&cat1=3&cat2=KYB">KYB</a></li>
+					     <li><a href="#">Mouse</a></li>
+					     <li><a href="#">Audio Interface</a></li>
+					   </ul>
+					</div>
+					<div class="btn-group web-site">
+					  <button type="button" class="btn btn-warning">Web site/application</button>
+					  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					     <span class="caret"></span>
+					     <span class="sr-only">Toggle Dropdown</span>
+					   </button>
+					   <ul class="dropdown-menu">
+					     <li><a href="/?p=open&cat1=5&cat2=Bug Report">Bug Report</a></li>
+					     <li><a href="#">UX Design</a></li>
+					     <li><a href="#">Feature Request</a></li>
+						 <li><a href="#">Suggestion/Feedback</a></li>
+					     <li role="separator" class="divider"></li>
+					     <li><a href="#">Other</a></li>
+					   </ul>
+					</div>
+				</div>
+			</div>
+			<!-- End: mdev modification -->
           </div>
         </div>
       </div>

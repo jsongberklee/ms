@@ -63,3 +63,38 @@ button.btn.btn-info.dropdown-toggle,button.btn.btn-info.dropdown-toggle:focus{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(180, 184, 206, .6);
 }
+
+.mdev-ticket-shortcut .btn{margin-top:15px;}
+.mdev-ticket-shortcut .btn-info, .mdev-ticket-shortcut button.btn.btn-info.dropdown-toggle, button.btn.btn-info.dropdown-toggle:focus {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+.mdev-ticket-shortcut .btn-info:hover {
+    background-color: #31b0d5;
+    border-color: #2aabd2;
+}
+.mdev-ticket-shortcut .web-site ul.dropdown-menu{
+	background: #f0ad4e;
+}
+.mdev-ticket-shortcut .web-site ul.dropdown-menu li a{
+	color:white;
+}
+.mdev-ticket-shortcut .web-site ul.dropdown-menu li a:hover{
+	background:#ec971f;
+}
+.mdev-ticket-shortcut .tech ul.dropdown-menu{
+	background: #5bc0de;
+}
+.mdev-ticket-shortcut .tech ul.dropdown-menu li a{
+	color:white;
+}
+.mdev-ticket-shortcut .tech ul.dropdown-menu li a:hover{
+	background:#31b0d5;
+}
+.No-display{
+	display:none;
+}
+.mdev-ticket-shortcut{
+	padding:0 0 1em 1em;
+}
+.create-ticket{margin-top:10px;}

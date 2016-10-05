@@ -47,6 +47,29 @@ if ($this->RECAPTCHA) {
 
             <div class="tab-content">
               <div class="tab-pane active in" id="one">
+                 <div class="form-group ticket-department-mdev">
+                   <label><?php echo $this->TXT[5]; ?></label>
+                   <select name="dept" tabindex="4" onchange="mswDeptLoader()" class="form-control">
+                   <option value="0">- - - -</option>
+                   <?php
+                   // DEPARTMENTS
+                   // html/ticket-department.htm
+                   echo $this->DEPARTMENTS;
+                   ?>
+                   </select>
+                 </div>
+
+ 	              <?php
+ 	              // Is there at least 1 custom field?
+ 	              if ($this->CUS_FIELDS_COUNT > 0) {
+ 	              ?>
+ 	              <div class="form-group" id="three">
+ 	                <div><i class="fa fa-warning fa-fw"></i> <?php echo $this->TXT[26]; ?></div>
+ 	              </div>
+                 <div class="form-group">
+                   <label><?php echo $this->TXT[4]; ?></label>
+                   <input type="text" class="form-control" name="subject" tabindex="3" maxlength="250" value="">
+                 </div>
 
                 <?php
                 // If the person is logged in, we already have name and email, so we can hide these fields..
@@ -65,31 +88,7 @@ if ($this->RECAPTCHA) {
                 }
                 ?>
 
-                <div class="form-group ticket-department-mdev">
-                  <label><?php echo $this->TXT[5]; ?></label>
-                  <select name="dept" tabindex="4" onchange="mswDeptLoader()" class="form-control">
-                  <option value="0">- - - -</option>
-                  <?php
-                  // DEPARTMENTS
-                  // html/ticket-department.htm
-                  echo $this->DEPARTMENTS;
-                  ?>
-                  </select>
-                </div>
 
-	              <?php
-	              // Is there at least 1 custom field?
-	              if ($this->CUS_FIELDS_COUNT > 0) {
-	              ?>
-	              <div class="form-group" id="three">
-	                <div><i class="fa fa-warning fa-fw"></i> <?php echo $this->TXT[26]; ?></div>
-	              </div>
-
-
-                <div class="form-group">
-                  <label><?php echo $this->TXT[4]; ?></label>
-                  <input type="text" class="form-control" name="subject" tabindex="3" maxlength="250" value="">
-                </div>
 
                 <div class="form-group">
                   <label><?php echo $this->TXT[7]; ?></label>
