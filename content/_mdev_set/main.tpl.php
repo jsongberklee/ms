@@ -7,17 +7,16 @@
           <div class="panel-body">
             <?php echo $this->TXT[1]; ?>
 			<div class="No-display">
-			<?php 
+			<?php
 			/* Begin: mdev modification */
-				echo '<a class="btn btn-primary btn-lg btn-front-new-ticket" href="http://local.mdev-sandbox.berklee.net/?p=open" role="button" rel="nofollow"><i class="fa fa-pencil fa-fw"></i> <span class="">Open New Ticket</span></a>'; 
+				echo '<a class="btn btn-primary btn-lg btn-front-new-ticket" href="http://local.mdev-sandbox.berklee.net/?p=open" role="button" rel="nofollow"><i class="fa fa-pencil fa-fw"></i> <span class="">Open New Ticket</span></a>';
 			/* End: mdev modification */
-			?> 
+			?>
 			</div>
-			<!-- Begin: mdev modification--> 
+			<!-- Begin: mdev modification--
 			<div class="panel panel-default create-ticket">
 				 <div class="panel-heading">CREATE TICKETS FOR</div>
 				<div class="mdev-ticket-shortcut">
-					<!-- Split button -->
 					<div class="btn-group">
 					  <button type="button" class="btn btn-primary">General Tickets</button>
 					</div>
@@ -59,7 +58,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- End: mdev modification -->
+			-- End: mdev modification -->
           </div>
         </div>
       </div>
