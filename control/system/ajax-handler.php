@@ -138,6 +138,9 @@ switch ($_GET['ajax']) {
   //========================
 
   case 'profile':
+    if (!isset($LI_ACC->id)) {
+      exit;
+    }
     if (isset($_POST['email']) && $_POST['email']) {
       // Is email same as current = error..
       if ($_POST['email'] == $LI_ACC->email) {

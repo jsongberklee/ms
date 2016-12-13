@@ -148,6 +148,12 @@ switch ($cmd) {
     break;
   // Ajax handler..
   case 'ajax-handler':
+    if (isset($_GET['ajax']) && in_array($_GET['ajax'], array('login','pass-reset'))) {
+      $skipLogin = true;
+    }
+    if (!isset($skipLogin)) {
+      mswIsLoggedIn($li_team);
+    }
     include(PATH . 'control/ajax.php');
     break;
   // Default..
